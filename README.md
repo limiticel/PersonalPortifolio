@@ -19,4 +19,4 @@ Project portfolio developed using Flask, HTML, and CSS. Focused on backend devel
 ```bash
 git clone https://github.com/limiticel/PERSONAL_PORTIFOLIO.git
 cd PORTIFOLIO
-python app.py
+python mian.py
