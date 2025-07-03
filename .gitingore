@@ -1,0 +1,25 @@
+# Bytecode
+app/__pycache__/
+*.py[cod]
+*.pyc
+# Ambiente virtual
+venv/
+
+
+# Configs do sistema
+.DS_Store
+*.swp
+
+# Arquivos sensíveis
+*.env
+data/storage.json
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+
+# sensivel
+app/sensitivity/passwords.py

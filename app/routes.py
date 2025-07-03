@@ -1,7 +1,7 @@
 from flask import render_template, request, redirect, url_for
 from app.utils import generate_random_string, load_data, save_data
 from flask import session
-
+from app.sensitivity.passwords import _user_, _password_
 
 def setup_routes(app):
     @app.route("/")
@@ -30,6 +30,8 @@ def setup_routes(app):
             projects_list.append(new_project)
 
             save_data(projects_list)
+            return redirect(url_for("logout"))
+            
 
 
         return render_template("admin.html")
@@ -40,7 +42,7 @@ def setup_routes(app):
             user = request.form.get("user")
             password = request.form.get("password")
             print("test")
-            if user == "admin" and password == "admin":
+            if user == _user_ and password == _password_:
                 session["logged_in"] =  True
                 return redirect(url_for("admin"))
 

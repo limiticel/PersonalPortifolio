@@ -1,0 +1,56 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #form {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 320px;
+    }
+
+    input[name="user"],
+    input[name="password"] {
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 1.8px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s;
+    }
+
+    input[name="user"]:focus,
+    input[name="password"]:focus {
+      outline: none;
+      border-color: #3b82f6; /* Azul */
+      box-shadow: 0 0 5px rgba(59,130,246,0.5);
+    }
+
+    button {
+      padding: 14px;
+      background-color: #3b82f6;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+    }
