@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='indexstyle.css') }}">
-    <title>Richard's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='indexstyle.css') }}" />
+  <title>Richard's Portfolio</title>
 </head>
 <body>
-    <section>
-        <div class="container"> 
-            <h3>RICHARD SILVA</h3>
-            <label>Desenvolvedor Backend | Python | IA | Machine Learning</label>
-        </div>
-    </section>
+  <section>
+    <div class="container"> 
+      <h3>RICHARD SILVA</h3>
+      <label>Desenvolvedor Backend | Python | IA | Machine Learning</label>
+    </div>
+  </section>
 
-    <section id="projects">
-        {% for project in projects %}
-            <ul class="project">
-                <h3>{{ project['name'] }}</h3>
-                <li class="objects"><strong>Description:</strong> {{ project['description'] }}</li>
-                <li class="objects"><strong>Link:</strong> <a href="{{ project['link'] }}">{{ project['link'] }}</a></li>
-                <div class="icon">
-                    <a href="{{ project['link'] }}" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
-                    <a href="{{ project['linkedin'] }}" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
-                </div>
-                </div>
-            </ul>
-            
-        {% endfor %}
-    </section>
+  <section id="projects">
+    {% for project in projects %}
+      <div class="project">
+        <h3>{{ project['name'] }}</h3>
+        <ul>
+          <li class="objects"><strong>Description:</strong> {{ project['description'] }}</li>
+          <li class="objects"><strong>Link:</strong> 
+            <a href="{{ project['link'] }}" target="_blank" rel="noopener noreferrer">
+              {{ project['link'] }}
+            </a>
+          </li>
+        </ul>
+        <div class="icon">
+          <a href="{{ project['link'] }}" target="_blank" rel="noopener noreferrer" class="icon-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="{{ project['linkedin'] }}" target="_blank" rel="noopener noreferrer" class="icon-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
 </body>
 </html>

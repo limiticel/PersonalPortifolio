@@ -17,6 +17,6 @@ Project portfolio developed using Flask, HTML, and CSS. Focused on backend devel
 ## How to run locally
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-python app.py
+git clone https://github.com/PERSONAL_PORTIFOLIO.git
+cd PORTIFOLIO
+python main.py

@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='adminstyle.css') }}">
-    <title>Document</title>
-</head>
-<body>
-    <form id="form" method="POST">
-       <label for=""><input name="name_project" placeholder="Project Name"></label>
-       <label for=""><input name="description" placeholder="Description"></label>
-       <label for=""><input name="link" placeholder="Link" ></label>
-       <label for=""><input name="linkedin" placeholder="linkedin" ></label>
-       <button type="submit">Salvar</button>
-    </form>
-    
-</body>
-</html>
+<form id="form" method="POST">
+  <div>
+    <label for="name_project">Nome do Projeto</label>
+    <input id="name_project" name="name_project" placeholder="Project Name" required />
+  </div>
+  <div>
+    <label for="description">Descrição</label>
+    <input id="description" name="description" placeholder="Description" required />
+  </div>
+  <div>
+    <label for="link">Link</label>
+    <input id="link" name="link" placeholder="Link" required />
+  </div>
+  <div>
+    <label for="linkedin">LinkedIn</label>
+    <input id="linkedin" name="linkedin" placeholder="LinkedIn" />
+  </div>
+  <button type="submit">Salvar</button>
+</form>

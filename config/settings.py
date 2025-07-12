@@ -1,3 +1,5 @@
+import os
+
 class Config:
-    SECRET_KEY = "12345678"
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'fallback-secret-key'
     SESSION_TYPE = "filesystem"

@@ -1,38 +1,26 @@
 [
     {
-        "name": "Chat Ai",
-        "description": "uma simples aplica\u00e7\u00e3o de chat",
-        "link": "https://git.chat.git",
-        "linkedin": "https://google.com"
+        "name": "SimpleAiModule",
+        "description": "Este \u00e9 um m\u00f3dulo Python que implementa uma biblioteca b\u00e1sica para classifica\u00e7\u00e3o multiclasse usando uma rede neural simples com softmax e cross-entropy, al\u00e9m de fun\u00e7\u00f5es auxiliares para manipula\u00e7\u00e3o e normaliza\u00e7\u00e3o de imagens (usando PIL e NumPy).",
+        "link": "",
+        "linkedin": "https://github.com/limiticel/SimpleAiModule/tree/main"
     },
     {
-        "name": "dsdsd",
-        "description": "dsds",
-        "link": "dsds",
-        "linkedin": "dsds"
+        "name": "GestorFiscal",
+        "description": " \u00e9 Uma aplica\u00e7\u00e3o web desenvolvida com Flask, projetada para auxiliar micro e pequenas empresas no gerenciamento de produtos e no controle de relat\u00f3rios fiscais. Ele permite o cadastro, edi\u00e7\u00e3o e consulta de produtos com informa\u00e7\u00f5es fiscais (como NCM, CFOP, CST, PIS, COFINS e al\u00edquotas).",
+        "link": "",
+        "linkedin": "https://github.com/limiticel/GestorFiscal"
     },
     {
-        "name": "teste",
-        "description": "teste",
-        "link": "teste",
-        "linkedin": "teste"
+        "name": "RVBank",
+        "description": "O RVBank \u00e9 um sistema banc\u00e1rio simples desenvolvido em parceria, com o objetivo de simular opera\u00e7\u00f5es financeiras b\u00e1sicas. O projeto permite o cadastro de usu\u00e1rios, autentica\u00e7\u00e3o segura e funcionalidades como dep\u00f3sito, saque e transfer\u00eancia entre contas.",
+        "link": "",
+        "linkedin": "https://github.com/limiticel/RVbank"
     },
     {
-        "name": "teste",
-        "description": "teste",
-        "link": "teste",
-        "linkedin": "teste"
-    },
-    {
-        "name": "teste",
-        "description": "teste",
-        "link": "teste",
-        "linkedin": "teste"
-    },
-    {
-        "name": "rerere",
-        "description": "rere",
-        "link": "rere",
-        "linkedin": "rere"
+        "name": "ChatBrain",
+        "description": "\u00e9 Um sistema de intelig\u00eancia artificial conversacional desenvolvido para classifica\u00e7\u00e3o e resposta de frases com base em um modelo customizado. Foi projetado para aprender com dados manuais e selecionar respostas baseadas em classifica\u00e7\u00e3o multiclasse.",
+        "link": "",
+        "linkedin": "https://github.com/limiticel/ChatBrain"
     }
 ]
